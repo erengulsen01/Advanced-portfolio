@@ -1,0 +1,53 @@
+body {
+    margin: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #e9ebe0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 50vh 50vh 62vh;
+    grid-gap: 10px;
+  }
+  
+  .box {
+    background-color:rgb(209, 178, 178);
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  div.box.a{
+    grid-column: span 2;
+  }
+  div.box.b{
+    grid-column: span 2;
+  }
+  div.box.c{
+    grid-column:span 2;
+  }
+
+
+
+  body > div > div.box.a > div > div:nth-child(2) > p{
+    color: black;
+    margin-top: 40px;
+  }
+  body > div > div.box.a > div > div.col-10.col-sm-8.col-lg-6 > img{
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+  }
+
+  #custom-cards > h2{
+    height: 60px;
+  }
+
+  #custom-cards {
+    align-self: flex-start; /* Kartları yukarı hizala */
+}
+
+#custom-cards > h2 {
+    margin-bottom: 10px; /* Başlık ile kartlar arasındaki boşluğu azalt */
+}
