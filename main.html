@@ -8,8 +8,51 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    
+    
+    
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Eren Gülşen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Experiences</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Communication
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Linkedin</a></li>
+                    <li><a class="dropdown-item" href="#">Github</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+
+
+
+
+
     <div class="container">
-      <div class="box a">
+      <div class="box aboutme a">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src="pictures/image.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -20,42 +63,43 @@
           </div>
         </div>
       </div>
-      <div class="box b">
+      <div class="box projects b">
         <h2 class="pb-2 border-bottom">Projects</h2>
+
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
           <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+            <div class="litems feature-icon d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-2 mb-3">
+              <svg class="bi" width="0.4em" height="0.4em"><use xlink:href="#collection"></use></svg>
             </div>
             <h3 class="fs-2 text-body-emphasis">Revenue Web Scraping</h3>
             <p>For homework, I learn webscraping tools and scraped revenue data of two company
               and compared them.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+            <button class="button" onclick="window.location.href='https://github.com/erengulsen01/data_science_project.git';">
+              <p class="text">Code link</p>
+            </button>
           </div>
+
           <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+            <div class="litems feature-icon d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-2 mb-3">
+              <svg class="bi" width="0.4em" height="0.4em"><use xlink:href="#people-circle"></use></svg>
             </div>
             <h3 class="fs-2 text-body-emphasis">Python based game</h3>
             <p> I created a game to practice my Object Oriented Programming skills in python.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+            <button class="button" onclick="window.location.href='https://github.com/erengulsen01/a_distant_valley.git';">
+              <p class="text">Code link</p>
+            </button>
           </div>
+
           <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            <div class="litems feature-icon d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-2 mb-3">
+              <svg class="bi" width="0.4em" height="0.4em"><use xlink:href="#toggles2"></use></svg>
             </div>
             <h3 class="fs-2 text-body-emphasis">Human Resource Database</h3>
             <p>As a group, we understand and analyze information systems in businesses. We gain fundamental skills to design information systems.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+            <button class="button" onclick="window.location.href='https://github.com/erengulsen01/Human-resourcece-database.git';">
+              <p class="text">Code link</p>
+            </button>
           </div>
         </div>
       </div>
@@ -65,22 +109,21 @@
 
 
 
-      <div class="box c">
+      <div class="box experiences c">
         <h2 class="pb-2 border-bottom">Experiences</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+            <div class="litems feature-icon d-inline-flex align-items-center justify-content-center text-bg bg-gradient fs-2 mb-3">
+              <svg class="bi" width="0.4em" height="0.4em"><use xlink:href="#collection"></use></svg>
             </div>
             <h3 class="fs-2 text-body-emphasis">PCD Cooperation, Istanbul, Turkey</h3>
             <p>• I worked on a project involving the extraction of data from internet websites using
               web scraping and storing it in a database. <br>
               • I used BeautifulSoup, Pandas, Numpy libraries for webscraping in python and
               MySQL for database management.</p>
-            <a href="#" class="icon-link">
-              Call to action
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+              <button class="button" onclick="window.location.href='https://www.pcdcooperation.com/';">
+                <p class="text">Website</p>
+              </button>
           </div>
         </div>
 
@@ -91,6 +134,8 @@
 
       </div>
     </div>
+
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 

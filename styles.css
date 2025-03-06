@@ -1,42 +1,42 @@
 body {
-    margin: 100px;
+    margin: 0px;
     margin-left: 0;
     margin-right: 0;
-    background-color: #e9ebe0;
+    background: rgb(255, 255, 255);
+background: linear-gradient(90deg, rgba(204,205,223,1) 17%, rgba(126,154,200,1) 32%, rgba(89,107,170,1) 47%, rgb(137, 150, 233) 73%);
+    color: 
   }
   
   .container {
     display: grid;
-    grid-template-rows: 50vh 50vh 62vh;
-    grid-gap: 10px;
+    grid-template-rows: 66vh 45vh 57vh;
+    grid-gap: 20px;
   }
   
   .box {
-    background-color:rgb(209, 178, 178);
-    color:rgb(255, 255, 255);
-    border-radius: 5px;
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
     padding: 20px;
-    font-size: 150%;
+    font-size: 120%;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: rgb(233, 238, 238);
+    
   }
   div.box.a{
-    grid-column: span 2;
-  }
-  div.box.b{
-    grid-column: span 2;
-  }
-  div.box.c{
-    grid-column:span 2;
+    margin-top: 100px;
   }
 
 
 
   body > div > div.box.a > div > div:nth-child(2) > p{
-    color: black;
+    color: rgb(0, 0, 0);
     margin-top: 40px;
+    font-size: 120%px;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
   body > div > div.box.a > div > div.col-10.col-sm-8.col-lg-6 > img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 5%;
   }
 
@@ -50,4 +50,74 @@ body {
 
 #custom-cards > h2 {
     margin-bottom: 10px; /* Başlık ile kartlar arasındaki boşluğu azalt */
+}
+body > div > div.box.c > h2{
+  color: black;
+  font-weight: bold
+}
+body > div > div.box.b > h2{
+  color: black;
+  font-weight: bold;
+}
+.icon-link {
+  color: rgb(0, 0, 0); /* Metin rengini kırmızı yapar */
+  text-decoration: none; /* Alt çizgiyi kaldırır (isteğe bağlı) */
+  font-weight: bold;
+}
+.icon-link:hover {
+  color: rgb(241, 7, 7); /* Üzerine gelindiğinde koyu kırmızı olur */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Navbar'ın diğer içeriklerin üstünde olmasını sağlar */
+  padding-top: 10px; /* Navbar'ın altındaki içerikler ile mesafeyi ayarlayın */
+}
+.navbar .nav-link {
+  font-size: 1.2rem; /* Yazı boyutunu büyütme */
+  font-weight: bold;
+}
+/* From Uiverse.io by kamehame-ha */ 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  background-color: #5e49e1;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 0.7em;
+  transition: 400ms;
+  margin: 0px;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
+.litems{
+  border-radius: 50%;
+  background-color: #5e49e1;
 }
