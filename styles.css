@@ -4,7 +4,7 @@ body {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-/* Responsive Grid Layout */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ body {
   margin-top: 80px;
 }
 
-/* Box Styling */
+
 .box {
   background-color: rgb(233, 238, 238);
   padding: 20px;
@@ -22,12 +22,10 @@ body {
   word-wrap: break-word;
 }
 
-/* Experiences Box */
 .experiences {
   background-color: #f8f9fa;
 }
 
-/* Resimler */
 img {
   max-width: 100%;
   width: 350px;
@@ -35,7 +33,7 @@ img {
   border-radius: 5%;
 }
 
-/* Navbar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -43,7 +41,7 @@ img {
   z-index: 1000;
 }
 
-/* Button Styling */
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -70,7 +68,6 @@ img {
   color: #181717;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .box {
       padding: 15px;

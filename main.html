@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Eren Gülşen</a>
@@ -38,7 +37,6 @@
         </div>
     </nav>
 
-    <!-- Content Section -->
     <div class="container">
         <div class="box aboutme">
             <div class="row align-items-center g-5 py-5">
@@ -116,18 +114,17 @@
             let navLinks = document.querySelectorAll(".navbar .nav-link");
 
             navLinks.forEach(link => {
-                // Dropdown menüsü linklerine tıklanması engellenmesin
-                if (!link.classList.contains('dropdown-toggle')) { // Dropdown menüsü değilse
+                if (!link.classList.contains('dropdown-toggle')) { 
                     link.addEventListener("click", function (event) {
-                        event.preventDefault(); // Scroll işlemi yapılacak linkler için preventDefault
+                        event.preventDefault(); 
 
                         let targetId = this.textContent.trim().replace(/\s+/g, '').toLowerCase(); 
                         let targetSection = document.querySelector(`.box.${targetId}`);
 
                         if (targetSection) {
                             window.scrollTo({
-                                top: targetSection.offsetTop - 70, // Hedef bölüme kaydırma
-                                behavior: "smooth" // Yumuşak kaydırma
+                                top: targetSection.offsetTop - 70, 
+                                behavior: "smooth" 
                             });
                         }
                     });
